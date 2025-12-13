@@ -1,0 +1,34 @@
+{
+  "name": "@tsonic/globals-pure",
+  "version": "0.3.0",
+  "description": "Global type definitions for Tsonic with BCL primitive methods (CLR naming)",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tsonic/dotnet-pure": "^0.7.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "tsonic",
+    "typescript",
+    "types",
+    "globals",
+    "utility-types",
+    "clr-naming"
+  ],
+  "author": "Tsonic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsoniclang/globals-pure.git"
+  }
+}
