@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@tsonic/dotnet-pure": "^0.8.4"
+    "@tsonic/dotnet-pure": "0.8.4"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
