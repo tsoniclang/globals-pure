@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/globals-pure",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Global type definitions for Tsonic with BCL primitive methods (CLR naming)",
   "main": "index.d.ts",
   "types": "index.d.ts",
@@ -12,10 +12,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@tsonic/dotnet-pure": "^0.7.7"
+    "@tsonic/dotnet-pure": "0.8.4"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "5.9.3"
   },
   "keywords": [
     "tsonic",
