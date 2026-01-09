@@ -15,7 +15,7 @@
     "@tsonic/dotnet-pure": "0.8.4"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "5.9.3"
   },
   "keywords": [
     "tsonic",
