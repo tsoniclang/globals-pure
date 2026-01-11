@@ -17,9 +17,19 @@ import {
   Boolean$instance, __Boolean$views,
   Object$instance
 } from "@tsonic/dotnet-pure/System/internal/index.js";
-import { IEnumerable_1 } from "@tsonic/dotnet-pure/System.Collections.Generic/internal/index.js";
+import type { IEnumerator } from "@tsonic/dotnet-pure/System.Collections/internal/index.js";
+import { IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet-pure/System.Collections.Generic/internal/index.js";
 
 declare global {
+  // Minimal Error surface (noLib mode).
+  // Compiler maps this to CLR System.Exception via builtin bindings.
+  class Error {
+    name: string;
+    message: string;
+    stack?: string;
+    constructor(message?: string);
+  }
+
   /**
    * Array<T> - C# array type (T[])
    *
@@ -35,11 +45,15 @@ declare global {
   interface Array<T> extends Array$instance, __Array$views, IEnumerable_1<T> {
     [n: number]: T;
     [Symbol.iterator](): IterableIterator<T>;
+    GetEnumerator(): IEnumerator_1<T>;
+    GetEnumerator(): IEnumerator;
   }
 
   interface ReadonlyArray<T> extends Array$instance, __Array$views, IEnumerable_1<T> {
     readonly [n: number]: T;
     [Symbol.iterator](): IterableIterator<T>;
+    GetEnumerator(): IEnumerator_1<T>;
+    GetEnumerator(): IEnumerator;
   }
 
   /**

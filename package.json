@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/globals-pure",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Global type definitions for Tsonic with BCL primitive methods (CLR naming)",
   "main": "index.d.ts",
   "types": "index.d.ts",
