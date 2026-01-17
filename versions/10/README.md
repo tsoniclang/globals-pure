@@ -2,14 +2,6 @@
 
 Global type definitions for Tsonic with CLR naming conventions (PascalCase).
 
-## Versioning
-
-This repo is versioned by **.NET major**:
-
-- **.NET 10** → `versions/10/` → npm: `@tsonic/globals-pure@10.x`
-
-When publishing, run: `npm publish versions/10 --access public`
-
 ## Overview
 
 This package provides base TypeScript types for Tsonic projects using CLR naming conventions:
